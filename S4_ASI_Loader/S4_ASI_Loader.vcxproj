@@ -19,6 +19,9 @@
   <ItemGroup>
     <ResourceCompile Include="S4_ASI_Loader.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="binkw32.def" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{34E0C349-50AF-490C-BBE8-5DBD4286DD3E}</ProjectGuid>
@@ -55,10 +58,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <TargetName>binkw32</TargetName>
+    <LibraryPath>$(SolutionDir)$(Configuration)\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <TargetName>binkw32</TargetName>
+    <LibraryPath>$(SolutionDir)$(Configuration)\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -73,7 +78,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <ModuleDefinitionFile>binkw32.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Shlwapi.lib;binkw32hooked.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,7 +98,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <ModuleDefinitionFile>binkw32.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Shlwapi.lib;binkw32hooked.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

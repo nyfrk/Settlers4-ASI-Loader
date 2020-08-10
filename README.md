@@ -19,7 +19,7 @@ There is a [German translation for this README](README_DE.md). Please note that 
 2. Find a file named `binkw32.dll` and rename it to `binkw32Hooked.dll`. (For the Gold Edition it is in a subdirectory named `Exe`)
 3. Download a [release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) and unpack the `binkw32.dll` to the very same directory.
 4. Create a `plugins` directory next to your `S4_Main.exe`
-5. Move your ASI plugins into the `plugins` directory to enable them. The loader will only pick up plugins with the .asi ending.
+5. Move your ASI plugins into the `plugins` directory to enable them. The loader will only pick up plugins with the .asi ending. It will load them in alphabetical order.
 
 
 
@@ -42,6 +42,9 @@ The project uses the Github Issue tracker. Please open a ticket [here](https://g
 Here is a list of plugins that you can install to The Settlers 4. You can add your plugin to this list. However, the only requirement is, that it is compatible with the latest Gold Edition AND the History Edition of the game. 
 
 * [Unlimited Selections Mod](https://github.com/nyfrk/Settlers4-UnlimitedSelectionMod) by [nyfrk](https://github.com/nyfrk): Remove the selection limit of your units and add additional selection filtering means.
+* [Settler Limit Remover Mod](https://github.com/nyfrk/S4_SettlerLimitRemover) by [nyfrk](https://github.com/nyfrk): Produce as much settlers as you want.
+* [Texture Changer](https://github.com/nyfrk/Settlers4-TextureChanger) by [nyfrk](https://github.com/nyfrk): Play always with the New World textures.
+* [Ferry Limit Customizer](https://github.com/nyfrk/FerryLimitCustomizer) by [nyfrk](https://github.com/nyfrk): Increase the capacity of your ferries.
 
 
 
@@ -66,7 +69,6 @@ The loader is a proxy dll of the binkw32.dll. It is well suited as a proxy targe
 #### Future work
 
 * Add improved crash dumps like [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) does. (The regular fatal error boxes are useless)
-* Order files by name before loading (thus loading plugins in a predictable order)
 
 
 

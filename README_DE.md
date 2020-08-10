@@ -19,7 +19,7 @@ Für dieses README gibt es eine [englische Version](README.md). Bitte beachte, d
 2. Suche eine Datei namens `binkw32.dll` und benennen sie in `binkw32Hooked.dll` um. (Bei der Gold Edition befindet sie sich in einem Unterverzeichnis namens `Exe`)
 3. Lade ein [Release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) herunter und entpacke die `binkw32.dll` in dasselbe Verzeichnis.
 4. Erstellen ein Verzeichnis namens `plugins` neben der `S4_Main.exe`.
-5. Verschiebe Deine ASI-Plugins in das Verzeichnis `plugins`, um sie zu aktivieren. Der Loader wird nur Plugins mit der Endung .asi beim Starten des Spiels laden.
+5. Verschiebe Deine ASI-Plugins in das Verzeichnis `plugins`, um sie zu aktivieren. Der Loader wird nur Plugins mit der Endung .asi beim Starten des Spiels laden. Sie werden in alphabetischer Reihenfolge geladen.
 
 
 
@@ -42,6 +42,9 @@ Das Projekt verwendet den Github Issue Tracker. Bitte öffne [hier](https://gith
 Hier ist eine Liste von bekannten Plugins, die Du für Die Siedler 4 installieren kannst. Du kannst ein Plugin zu dieser Liste hinzufügen. Die einzige Voraussetzung ist jedoch, dass es mit der neuesten Gold Edition UND der History Edition des Spiels kompatibel ist. 
 
 * [Unbegrenzte Auswahllimit Mod](https://github.com/nyfrk/Settlers4-UnlimitedSelectionMod) von [nyfrk](https://github.com/nyfrk): Entferne das Auswahllimit Deiner Einheiten und füge zusätzliche Auswahlfilteroptionen hinzu.
+* [Settler Limit Remover Mod](https://github.com/nyfrk/S4_SettlerLimitRemover) von [nyfrk](https://github.com/nyfrk): Produce as much settlers as you want.
+* [Texture Changer](https://github.com/nyfrk/Settlers4-TextureChanger) von [nyfrk](https://github.com/nyfrk): Play always with the New World textures.
+* [Ferry Limit Customizer](https://github.com/nyfrk/FerryLimitCustomizer) von [nyfrk](https://github.com/nyfrk): Increase the capacity of your ferries.
 
 
 
@@ -66,7 +69,6 @@ Der Loader ist eine Proxy-Dll der binkw32.dll. Sie eignet sich gut als Proxy-Zie
 ##### Zukünftige Arbeit
 
 * Verbesserte Crash-Dumps, wie es [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) tut. (Die üblichen Fatal Error Meldungen sind nutzlos) 
-* Sortieren der Plugins nach Dateinamen vor dem Laden (Damit die Plugins in vorhersehbarer Reihenfolge geladen werden)
 
 
 
