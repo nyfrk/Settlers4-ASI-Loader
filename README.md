@@ -1,33 +1,27 @@
-# The Settlers 4: ASI Loader
+# The Settlers 4: ASI Loader [![GitHub release (latest by date)](https://img.shields.io/github/v/release/nyfrk/Settlers4-ASI-Loader)](https://github.com/nyfrk/Settlers4-ASI-Loader/releases/latest)
 
-This is a tool which adds ASI plugin loading functionality to The Settlers 4 or any other game that uses the same binkw32.dll. You need it to install mods to your game as the game does not come with modding support by default.
+This is a tool which adds ASI plugin loading functionality to The Settlers 4. You need it to install mods to your game as the game does not come with modding support by default.
 
 There is a [German translation for this README](README_DE.md). Please note that it may be outdated.
+
+![dialog](dialog.png)
 
 
 
 ## Features
 
+* Enables the usage of ASI Plugins to extend the game.
 * Works with Gold Edition as well as with the History Edition of The Settlers 4.
-* Compatible with Windows XP or newer.
+* Compatible with Windows XP or later.
 
 
 
 ## Installation
 
-1. Navigate to your installation directory of your game. 
-2. Find a file named `binkw32.dll` and rename it to `binkw32Hooked.dll`. (For the Gold Edition it is in a subdirectory named `Exe`)
-3. Download a [release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) and unpack the `binkw32.dll` to the very same directory.
-4. Create a `plugins` directory next to your `S4_Main.exe`
-5. Move your ASI plugins into the `plugins` directory to enable them. The loader will only pick up plugins with the .asi ending. It will load them in alphabetical order.
-
-
-
-After these steps your installation directory should look like this:
-
-![installation](installation.png)
-
-Note that if windows does not show the file endings (like .dll) then you can just ignore them. For example in that case the file should be named just `binkw32Hooked`
+1. Download a [release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) and run the `S4_ASI.exe`.
+2. Choose your settlers 4 installation directory by selecting your S4_Main.exe. If you have the history edition installed skip this step.
+3. Click Install
+4. Click Open Plugins Directory to find the directory for your plugins. The loader will only pick up plugins with the .asi ending. It will load them in alphabetical order.
 
 
 

@@ -1,13 +1,16 @@
-# Die Siedler 4: ASI-Loader
+# Die Siedler 4: ASI-Loader [![GitHub release (latest by date)](https://img.shields.io/github/v/release/nyfrk/Settlers4-ASI-Loader)](https://github.com/nyfrk/Settlers4-ASI-Loader/releases/latest)
 
-Dieses Tool ermöglicht es ASI-Plugins in Die Siedler 4 oder jedem anderen Spiel, das die gleiche binkw32.dll verwendet, zu laden.
+Dieses Tool ermöglicht es ASI-Plugins in Die Siedler 4 zu laden.
 
 Für dieses README gibt es eine [englische Version](README.md). Bitte beachte, dass die deutsche Übersetzung ggf. veraltet sein kann.
+
+![dialog](dialog.png)
 
 
 
 ## Features
 
+* Ermöglicht die Nutzung von ASI Plugins um das Spiel zu erweitern.
 * Funktioniert sowohl mit der Gold Edition als auch mit der History Edition von Die Siedler 4.
 * Kompatibel mit Windows XP oder neuer.
 
@@ -15,19 +18,10 @@ Für dieses README gibt es eine [englische Version](README.md). Bitte beachte, d
 
 ## Installation
 
-1. Navigiere zum Installationsverzeichnis des Spiels. 
-2. Suche eine Datei namens `binkw32.dll` und benennen sie in `binkw32Hooked.dll` um. (Bei der Gold Edition befindet sie sich in einem Unterverzeichnis namens `Exe`)
-3. Lade ein [Release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) herunter und entpacke die `binkw32.dll` in dasselbe Verzeichnis.
-4. Erstellen ein Verzeichnis namens `plugins` neben der `S4_Main.exe`.
-5. Verschiebe Deine ASI-Plugins in das Verzeichnis `plugins`, um sie zu aktivieren. Der Loader wird nur Plugins mit der Endung .asi beim Starten des Spiels laden. Sie werden in alphabetischer Reihenfolge geladen.
-
-
-
-Nach diesen Schritten sollte Dein Installationsverzeichnis wie folgt aussehen:
-
-![installation](installation.png)
-
-Beachte, dass wenn Windows die Dateiendungen (wie .dll) nicht anzeigt, Du diese einfach ignorieren kannst. In diesem Fall sollte die Datei zum Beispiel einfach `binkw32Hooked` genannt werden.
+1. Lade ein [Release](https://github.com/nyfrk/Settlers4-ASI-Loader/releases) herunter und starte die `S4_ASI.exe`.
+2. Selektiere dein Siedler 4 Installationsverzeichnis durch öffnen der S4_Main.exe. Wenn du die History Edition installiert hast, kannst du diesen Schritt überspringen.
+3. Klicke auf Installieren
+4. Klicke auf "Plugins Verzeichnis öffnen". In dieses Verzeichnis kannst du deine Plugins verschieben. Der Loader wird nur Plugins mit der Endung .asi beim Starten des Spiels laden. Sie werden in alphabetischer Reihenfolge geladen.
 
 
 
